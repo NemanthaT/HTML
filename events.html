@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <h1>JS Events</h1></head>
+
+    <body>
+        <script language="JavaScript" type="text/JavaScript">
+            function clickevent() {
+                document.write("Hello world")
+            }
+        </script>
+
+        <form>
+            <input type="button" onclick="clickevent()" value="Click this"/>
+        </form>
+        <p onmouseover="clickevent()">
+            See the magic
+        </p>
+        <input type="text" id="input" onkeydown="clickevent()"/>
+    </body>
+</html>
