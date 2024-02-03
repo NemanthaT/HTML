@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: 'Segoe UI';
+            background-color: #dfd9d9;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .blurry-background {
+            width: 100vw;
+            height: 100vh;
+            background-image: url("bg.jpg");
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            filter: blur(10px);
+            z-index: -1;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 400px;
+            max-width: 100%;
+        }
+
+        .form-header {
+            background-color: #8e44ad;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .form-group {
+            padding: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group button {
+            background-color: #8e44ad;
+            color: #ffffff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-group button:hover {
+            background-color: #8e44ad;
+        }
+
+        .form-footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .form-footer a {
+            color: #8e44ad;
+            text-decoration: none;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #d3d3d3;
+            color: #576574;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #8e44ad;
+        }      
+    </style>
+</head>
+
+<body>
+    <div class="blurry-background">
+
+    </div>
+    <div class="container">
+        <div class="form-header">
+            <h2>Sign In</h2>
+        </div>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">e-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <center>
+                <button type="submit">Sign In</button>
+            </center>
+        </div>
+
+    </div>
+    <footer>
+        <p>&copy; 2024 NexusTech Solutions</p>
+    </footer>
+</body>
+
+</html>
