@@ -17,10 +17,16 @@ body{
 }
 
 .bg{
-    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("holo.gif");
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: blur(10px);
     z-index: -1;
-    left: 0%;
-    top: 20%;
 }
 .bg img{
     width: 120%;
@@ -89,7 +95,7 @@ button:hover{
     }
 
     img {
-        width: 100%; /* Make the image full width on smaller screens */
-        margin-left: 0; /* Remove margin for smaller screens */
+        width: 100%; 
+        margin-left: 0; 
     }
 }
