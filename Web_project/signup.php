@@ -8,6 +8,7 @@
         $Email = $_POST['email'];
         $Password = $_POST['password'];
 
+        
         $query = "INSERT INTO users (username, email, password) VALUES ('$Username', '$Email', '$Password')";
 
         $result = mysqli_query($conn, $query);
@@ -82,6 +83,9 @@
         .form-group3 {
             padding: 15px 20px 5px 20px;
         }
+        .showp {
+            padding: 0px 0px 5px 20px;
+        }
 
         .form-group1 label {
             display: block;
@@ -95,6 +99,11 @@
         }
         .form-group3 label {
             display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .showp label {
+            display: inline;
             margin-bottom: 8px;
             color: #333;
         }
@@ -123,8 +132,6 @@
             border-radius: 4px;
             box-sizing: border-box;
         }
-
-
         .form-group button {
             font-family: 'Segoe UI';
             background-color: #8e44ad;
@@ -191,8 +198,21 @@
         </div>
         <div class="form-group3">
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" required><br>
         </div>
+        <div class="showp">
+            
+            <label for="showpassword">Show Password</label>
+            <input type="checkbox" onclick="myFunction()">
+            <script> function myFunction() {    
+                var x = document.getElementById("password");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }</script>
+        </div>    
         <div class="form-group">
             <center>
                 <button name="submit" type="submit">Signup</button>
