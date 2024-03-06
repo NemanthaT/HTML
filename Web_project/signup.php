@@ -189,12 +189,12 @@
         </div>
         <div class="form-group1">
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" name="username" placeholder="Abc@1" required>
         </div>
 
         <div class="form-group2">
             <label for="email">e-mail:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="abc@something.com"  required>
         </div>
         <div class="form-group3">
             <label for="password">Password:</label>
